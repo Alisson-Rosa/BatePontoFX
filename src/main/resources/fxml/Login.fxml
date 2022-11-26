@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="445.0" prefWidth="326.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label layoutX="107.0" layoutY="55.0" prefHeight="17.0" prefWidth="113.0" text="Login Administrador" />
+      <TextField fx:id="textLoginAdmin" disable="true" layoutX="13.0" layoutY="90.0" prefHeight="26.0" prefWidth="301.0" promptText="Digite o Login" />
+      <PasswordField fx:id="textPasswordAdmin" disable="true" layoutX="12.0" layoutY="131.0" prefHeight="26.0" prefWidth="301.0" promptText="Digite a Senha" />
+      <Label layoutX="109.0" layoutY="180.0" prefHeight="17.0" prefWidth="107.0" text="Login Colaborador" />
+      <TextField fx:id="textLoginEmployee" disable="true" layoutX="12.0" layoutY="223.0" prefHeight="26.0" prefWidth="301.0" promptText="Digite o Login" />
+      <PasswordField fx:id="textPasswordEmployee" disable="true" layoutX="12.0" layoutY="254.0" prefHeight="26.0" prefWidth="301.0" promptText="Digite a Senha" />
+      <Button fx:id="btnLogin" layoutX="13.0" layoutY="302.0" mnemonicParsing="false" onAction="#login" prefHeight="42.0" prefWidth="302.0" text="Login" />
+      <Button fx:id="btnCancel" layoutX="12.0" layoutY="363.0" mnemonicParsing="false" onAction="#cancel" prefHeight="42.0" prefWidth="302.0" text="Cancelar" />
+      <Button fx:id="btnLoginAdmin" onAction="#btnLoginAdmin" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" text="Login Administrador" />
+      <Button fx:id="btnLoginEmployee" onAction="#btnLoginEmployee" layoutX="196.0" layoutY="14.0" mnemonicParsing="false" text="Login Colaborador" />
+   </children>
+</AnchorPane>
