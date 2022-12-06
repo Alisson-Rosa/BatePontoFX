@@ -2,19 +2,28 @@ package model.entity;
 
 import model.enumeration.Role;
 
-public class User {
-    private int registrationCode;
+public class UserFilter {
+
+    private Integer registrationCode;
     private String name;
     private String login;
-    private String password;
-    private Role role;
+    private String role;
 
+    public UserFilter() {
+    }
 
-    public int getRegistrationCode() {
+    public UserFilter(Integer registrationCode, String name, String login, String role) {
+        this.registrationCode = registrationCode;
+        this.name = name;
+        this.login = login;
+        this.role = role;
+    }
+
+    public Integer getRegistrationCode() {
         return registrationCode;
     }
 
-    public void setRegistrationCode(int registrationCode) {
+    public void setRegistrationCode(Integer registrationCode) {
         this.registrationCode = registrationCode;
     }
 
@@ -34,19 +43,11 @@ public class User {
         this.login = login;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public Role getRole() {
+    public String getRole() {
         return role;
     }
 
-    public void setRole(Role role) {
+    public void setRole(String role) {
         this.role = role;
     }
 }
